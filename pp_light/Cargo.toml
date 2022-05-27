@@ -1,5 +1,5 @@
 [package]
-name = "progpow_cpu"
+name = "stack_test_progpow_cpu"
 version = "0.1.0"
 authors = ["Yuri Albuquerque <yuridenommus@gmail.com>"]
 edition = "2018"
