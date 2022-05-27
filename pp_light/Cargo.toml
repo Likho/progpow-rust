@@ -3,6 +3,8 @@ name = "stack_test_progpow_cpu"
 version = "0.1.0"
 authors = ["Yuri Albuquerque <yuridenommus@gmail.com>"]
 edition = "2018"
+license = ""
+description = ""
 
 [dependencies]
 primal = "0.2.3"
