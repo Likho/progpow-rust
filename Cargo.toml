@@ -9,7 +9,7 @@ bigint = "4.4.1"
 byteorder = "^0.5"
 lazy_static = "1"
 dirs = "1.0.3"
-progpow_cpu = { path = "./pp_light" }
+stack_test_progpow_cpu = "0.1.0"
 
 [build-dependencies]
 bindgen = "0.37.0"
@@ -17,13 +17,13 @@ cmake = "0.1.40"
 filetime = "0.2"
 
 [dependencies.progpow_gpu_cuda]
-package = "progpow_gpu"
+package = "stack_test_progpow_gpu"
 path = "./pp_full"
 features = ['cuda']
 optional = true
 
 [dependencies.progpow_gpu_opencl]
-package = "progpow_gpu"
+package = "stack_test_progpow_gpu"
 path = "./pp_full"
 features = ['opencl']
 optional = true

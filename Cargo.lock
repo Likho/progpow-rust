@@ -566,30 +566,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "progpow_cpu"
-version = "0.1.0"
-dependencies = [
- "crunchy 0.2.2",
- "either",
- "keccak-hash",
- "log",
- "memmap",
- "parking_lot",
- "primal",
-]
-
-[[package]]
-name = "progpow_gpu"
-version = "0.1.0"
-dependencies = [
- "bigint",
- "bindgen",
- "cmake",
- "filetime",
- "libc",
-]
-
-[[package]]
 name = "quick-error"
 version = "1.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -862,8 +838,34 @@ dependencies = [
  "filetime",
  "lazy_static",
  "libc",
- "progpow_cpu",
- "progpow_gpu",
+ "stack_test_progpow_cpu",
+ "stack_test_progpow_gpu",
+]
+
+[[package]]
+name = "stack_test_progpow_cpu"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6e698ec4ad98bd22e5dfbae1a6013151ecb2ed8e5fce7f2d6982a4b2e2b4094c"
+dependencies = [
+ "crunchy 0.2.2",
+ "either",
+ "keccak-hash",
+ "log",
+ "memmap",
+ "parking_lot",
+ "primal",
+]
+
+[[package]]
+name = "stack_test_progpow_gpu"
+version = "0.1.0"
+dependencies = [
+ "bigint",
+ "bindgen",
+ "cmake",
+ "filetime",
+ "libc",
 ]
 
 [[package]]
