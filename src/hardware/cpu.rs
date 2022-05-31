@@ -4,8 +4,8 @@ use std::path::Path;
 use std::path::PathBuf;
 
 use crate::types::{Hardware, PpCompute, ProgPowError, H256};
-use progpow_cpu::cache::{NodeCacheBuilder, OptimizeFor};
-use progpow_cpu::compute::{light_compute, PoW};
+use stack_test_progpow_cpu::cache::{NodeCacheBuilder, OptimizeFor};
+use stack_test_progpow_cpu::compute::{light_compute, PoW};
 
 const CACHE_DIR: &str = "cache";
 const EPIC_HOME: &str = ".epic";

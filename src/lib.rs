@@ -4,12 +4,13 @@ extern crate lazy_static;
 extern crate bigint;
 extern crate dirs;
 
-extern crate progpow_cpu;
+extern crate stack_test_progpow_cpu;
 
 #[cfg(feature = "cuda")]
-extern crate progpow_gpu_cuda as progpow_gpu;
+// extern crate stack_test_progpow_gpu_
+extern crate stack_test_progpow_gpu_cuda as progpow_gpu;
 #[cfg(feature = "opencl")]
-extern crate progpow_gpu_opencl as progpow_gpu;
+extern crate stack_test_progpow_gpu_opencl as progpow_gpu;
 
 pub mod hardware;
 pub mod types;

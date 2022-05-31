@@ -2,7 +2,8 @@
 name = "stack_test_progpow"
 version = "0.1.0"
 authors = ["Brick Abode <a@a.com>"]
-
+license = "Apache-2.0"
+description = "stack test progpow "
 [dependencies]
 libc = "0.2.58"
 bigint = "4.4.1"
@@ -16,18 +17,20 @@ bindgen = "0.37.0"
 cmake = "0.1.40"
 filetime = "0.2"
 
-[dependencies.progpow_gpu_cuda]
-package = "stack_test_progpow_gpu"
-path = "./pp_full"
-features = ['cuda']
+[dependencies.stack_test_progpow_gpu]
+#package = "stack_test_progpow_gpu"
+#path = "./pp_full"
+version = "0.1.0"
+features = ['cuda', "opencl"]
 optional = true
 
-[dependencies.progpow_gpu_opencl]
-package = "stack_test_progpow_gpu"
-path = "./pp_full"
-features = ['opencl']
-optional = true
+#[dependencies.stack_test_progpow_gpu]
+#version = "0.1.0"
+##package = "stack_test_progpow_gpu"
+##path = "./pp_full"
+#features = ['opencl']
+#optional = true
 
-[features]
-opencl = ["progpow_gpu_opencl"]
-cuda = ["progpow_gpu_cuda"]
+#[features]
+#opencl = ["stack_test_progpow_gpu_opencl"]
+#cuda = ["stack_test_progpow_gpu_cuda"]
