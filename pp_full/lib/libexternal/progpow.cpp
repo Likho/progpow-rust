@@ -1,12 +1,13 @@
 #include <iostream>
 #include "./progpow.h"
+#include <climits>
 
 #define ERROR_NOT_GPU "Isn't possible found a GPU"
 
 #define MAX_MINERS 4
-
-using namespace dev;
-using namespace eth;
+//
+//using namespace dev;
+//using namespace eth;
 
 #define DRIVER_CUDA 1
 #define DRIVER_OCL  2
@@ -50,7 +51,7 @@ inline void cl_configure(int devicesCount, int m_dagLoadMode, int m_dagCreateDev
 
 extern "C" {
     void progpow_gpu_configure(uint32_t devicesCount) {
-	    unsigned m_miningThreads = UINT_MAX;
+
         int m_dagLoadMode = DAG_LOAD_MODE_SEQUENTIAL;
         int m_dagCreateDevice = 1;
 
